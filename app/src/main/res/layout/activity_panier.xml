@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#000000">
+
+    <!-- Barre du haut avec Titre et Retour -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btnRetour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retour"
+            android:backgroundTint="#3ba51e"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Mon Panier"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <!-- Liste des films -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColor="#ffffff"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/panierContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textColor="#ffffff"
+            android:background="#ffffff"
+            android:padding="8dp"/>
+    </ScrollView>
+
+    <!-- Bouton pour vider le panier -->
+    <Button
+        android:id="@+id/btnValiderPanier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🪙 Passer la commande"
+        android:backgroundTint="#3ba51e"
+        android:padding="12dp"
+        android:textStyle="bold"/>
+
+    <!-- Bouton pour vider le panier -->
+    <Button
+        android:id="@+id/btnViderPanier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vider le panier"
+        android:backgroundTint="#ff0000"
+        android:padding="12dp"
+        android:textStyle="bold"/>
+</LinearLayout>
