@@ -66,7 +66,7 @@ public class AfficherListeDvdsActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        String apiUrl = "http://10.0.2.2:8080/toad/film/all";
+        String apiUrl = DonneesPartagees.getURLConnexion() + "/toad/film/all";
         new AppelerServiceRestGETAfficherListeDvdsTask().execute(apiUrl);
     }
 

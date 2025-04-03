@@ -7,6 +7,31 @@
     android:padding="16dp"
     android:background="#000000">
 
+    <TextView
+        android:id="@+id/URLConnexionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:text="URL de connexion"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Spinner
+        android:id="@+id/spinnerURLs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/URLConnexionText"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="146dp" />
+    <EditText
+        android:id="@+id/URLText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:hint="URL de connexion"
+        app:layout_constraintTop_toBottomOf="@id/spinnerURLs" />
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
