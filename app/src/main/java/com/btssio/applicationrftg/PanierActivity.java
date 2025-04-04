@@ -106,7 +106,7 @@ public class PanierActivity extends AppCompatActivity {
         JSONArray rentalsArray = new JSONArray();
         for (String filmInfo : panier) {
             String[] info = filmInfo.split(","); // Assurez-vous du bon format: "id,titre,prix"
-            int filmId = Integer.parseInt(info[0]);  // ⚠ Vérifie si c'est bien `inventory_id`
+            int inventory_id = Integer.parseInt(info[0]);  // ⚠ Vérifie si c'est bien `inventory_id`
             String filmTitre = info[1];  // Peut-être pas utilisé dans l'API, mais à garder si nécessaire
             String prixFilm = info[2];   // Idem
 
@@ -114,7 +114,7 @@ public class PanierActivity extends AppCompatActivity {
             JSONObject rentalData = new JSONObject();
             try {
                 rentalData.put("rental_date", rentalDate);
-                rentalData.put("inventory_id", filmId);
+                rentalData.put("inventory_id", inventory_id);
                 rentalData.put("customer_id", getUserId());  // Utilisation de l'ID du client
                 rentalData.put("return_date", returnDate);
                 rentalData.put("staff_id", 1); // Remplacer par l'ID du staff si nécessaire

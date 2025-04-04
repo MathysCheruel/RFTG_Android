@@ -20,7 +20,7 @@ public class PanierManager {
     }
 
     // Ajouter un film avec son ID, son titre et son prix
-    public void ajouterAuPanier(int filmId, String filmTitre, String prixFilm) {
+    public void ajouterAuPanier(String inventory_id, int filmId, String filmTitre, String prixFilm) {
         String filmInfo = filmId + "," + filmTitre + "," + prixFilm; // Concaténation des informations
         panier.add(filmInfo);
     }

@@ -129,7 +129,7 @@ public class FilmDetailsActivity extends AppCompatActivity {
 
                             if (stock > 0) {
                                 Log.d(TAG, "Film disponible avec stock : " + stock);
-                                PanierManager.getInstance().ajouterAuPanier(filmId, titreFilm, prixFilm);
+                                PanierManager.getInstance().ajouterAuPanier(response, filmId, titreFilm, prixFilm);
                                 Toast.makeText(FilmDetailsActivity.this, "Ajouté au panier !", Toast.LENGTH_SHORT).show();
                             } else {
                                 Log.d(TAG, "Stock insuffisant pour le film");
