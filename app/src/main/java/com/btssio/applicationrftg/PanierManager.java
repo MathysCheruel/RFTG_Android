@@ -1,9 +1,11 @@
 package com.btssio.applicationrftg;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class PanierManager {
+public class PanierManager extends AppCompatActivity {
 
     private static PanierManager instance;
     private List<String> panier; // On stocke ici les titres des films et leurs infos (ID, titre, prix)
